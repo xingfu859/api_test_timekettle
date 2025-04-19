@@ -3,8 +3,6 @@
 1、记录日志文件
 2、pytest.main -- 收集测试用例 执行测试用例 生成报告
 
-日志文件做路径处理：
-
 """
 import pytest
 from loguru import logger
