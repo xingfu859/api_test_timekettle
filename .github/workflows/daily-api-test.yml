@@ -1,0 +1,66 @@
+name: 每日API测试
+
+on:
+  schedule:
+    # 每天北京时间11点执行
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: '选择测试环境'
+        required: true
+        default: 'test'
+        type: choice
+        options:
+          - test
+          - dev
+          - pre
+
+env:
+  PYTHON_VERSION: '3.9'
+
+jobs:
+  执行测试:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v3
+      
+    - name: 设置Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: 安装依赖
+      run: |
+        pip install -r requirements.txt
+        pip install pytest allure-pytest loguru
+        
+    - name: 执行测试
+      env:
+        TEST_ENV: ${{ github.event.inputs.environment || 'test' }}
+      run: |
+        echo "开始执行测试，环境: $TEST_ENV"
+        python -m pytest -v -s --alluredir=./allure-results --clean-alluredir --env=$TEST_ENV
+        
+    - name: 发送钉钉通知
+      env:
+        DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+      run: |
+        # 简单通知
+        python -c "
+import os
+import requests
+import json
+
+webhook = os.getenv('DINGTALK_WEBHOOK')
+if webhook:
+    message = {
+        'msgtype': 'text',
+        'text': {
+            'content': 'API测试执行完成\n环境: ${{ github.event.inputs.environment || 'test' }}\n查看详情: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        }
+    }
+    requests.post(webhook, json=message)
+"
