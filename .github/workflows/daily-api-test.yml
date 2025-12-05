@@ -1,13 +1,13 @@
-name: 每日API测试
+name: Daily API Tests
 
 on:
   schedule:
-    # 每天北京时间11点执行
+    # 每天UTC时间3点执行（北京时间11点）
     - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       environment:
-        description: '选择测试环境'
+        description: '测试环境'
         required: true
         default: 'test'
         type: choice
@@ -15,52 +15,246 @@ on:
           - test
           - dev
           - pre
+      tags:
+        description: '测试标签'
+        required: false
+        default: ''
+        type: string
 
 env:
   PYTHON_VERSION: '3.9'
+  ALLURE_RESULTS: './allure-results'
+  ALLURE_REPORT: './allure-report'
 
 jobs:
-  执行测试:
+  api-test:
     runs-on: ubuntu-latest
     
+    strategy:
+      matrix:
+        environment: ['test', 'dev', 'pre']
+      fail-fast: false
+    
     steps:
-    - name: 检出代码
+    - name: Checkout code
       uses: actions/checkout@v3
-      
-    - name: 设置Python
+    
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
       uses: actions/setup-python@v4
       with:
         python-version: ${{ env.PYTHON_VERSION }}
-        
-    - name: 安装依赖
+    
+    - name: Install dependencies
       run: |
-        pip install -r requirements.txt
-        pip install pytest allure-pytest loguru
-        
-    - name: 执行测试
-      env:
-        TEST_ENV: ${{ github.event.inputs.environment || 'test' }}
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        fi
+        # 安装测试依赖
+        pip install pytest allure-pytest pytest-html loguru requests
+        # 安装Allure命令行工具
+        sudo apt-get update
+        sudo apt-get install -y openjdk-11-jre
+        wget https://github.com/allure-framework/allure2/releases/download/2.20.1/allure-2.20.1.tgz
+        tar -zxvf allure-2.20.1.tgz
+        sudo mv allure-2.20.1 /opt/allure
+        sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+    
+    - name: Create environment config
       run: |
-        echo "开始执行测试，环境: $TEST_ENV"
-        python -m pytest -v -s --alluredir=./allure-results --clean-alluredir --env=$TEST_ENV
+        # 根据环境设置API基础URL
+        case "${{ matrix.environment }}" in
+          "test")
+            echo "API_BASE_URL=https://test-api.example.com" >> $GITHUB_ENV
+            ;;
+          "dev")
+            echo "API_BASE_URL=https://dev-api.example.com" >> $GITHUB_ENV
+            ;;
+          "pre")
+            echo "API_BASE_URL=https://pre-api.example.com" >> $GITHUB_ENV
+            ;;
+        esac
+        echo "TEST_ENV=${{ matrix.environment }}" >> $GITHUB_ENV
+    
+    - name: Run tests with custom env
+      id: run-tests
+      continue-on-error: true
+      run: |
+        # 构建pytest命令（使用您的脚本方式）
+        # 注意：这里直接调用您的脚本，而不是使用pytest命令
+        echo "开始执行测试，环境: ${{ matrix.environment }}"
         
-    - name: 发送钉钉通知
+        # 方法1：直接调用您的脚本
+        python run_tests.py ${{ matrix.environment }}
+        
+        # 或者方法2：直接使用pytest命令（如果您有conftest.py）
+        # pytest -v -s --alluredir=${{ env.ALLURE_RESULTS }} --clean-alluredir --env=${{ matrix.environment }} test_basecase.py
+        
+        # 记录退出状态
+        echo "exit_code=$?" >> $GITHUB_OUTPUT
+        
+        # 统计测试结果
+        if [ -d "${{ env.ALLURE_RESULTS }}" ]; then
+          echo "测试结果目录已创建"
+          # 保存环境信息
+          echo '{"environment": "${{ matrix.environment }}", "timestamp": "'$(date -Is)'"}' > ${{ env.ALLURE_RESULTS }}/environment.json
+        fi
+    
+    - name: Generate Allure report
+      if: always()
+      run: |
+        # 生成Allure报告
+        if [ -d "${{ env.ALLURE_RESULTS }}" ] && [ "$(ls -A ${{ env.ALLURE_RESULTS }})" ]; then
+          echo "生成Allure报告..."
+          allure generate ${{ env.ALLURE_RESULTS }} -o ${{ env.ALLURE_REPORT }} --clean
+          
+          # 添加执行器信息
+          cat > ${{ env.ALLURE_REPORT }}/executor.json << EOF
+          {
+            "name": "GitHub Actions",
+            "type": "github",
+            "buildName": "Daily API Test - ${{ matrix.environment }}",
+            "buildUrl": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "reportUrl": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts"
+          }
+          EOF
+        else
+          echo "没有测试结果可生成报告"
+        fi
+    
+    - name: Upload test artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results-${{ matrix.environment }}
+        path: |
+          ${{ env.ALLURE_RESULTS }}/
+          ${{ env.ALLURE_REPORT }}/
+        retention-days: 30
+    
+    - name: Prepare summary data
+      if: always()
+      id: summary
+      run: |
+        # 准备测试摘要信息
+        if [ -d "${{ env.ALLURE_RESULTS }}" ]; then
+          # 统计测试结果文件
+          TOTAL_FILES=$(find ${{ env.ALLURE_RESULTS }} -name "*.json" -type f | wc -l)
+          echo "total_files=$TOTAL_FILES" >> $GITHUB_OUTPUT
+          echo "test_environment=${{ matrix.environment }}" >> $GITHUB_OUTPUT
+          echo "run_id=${{ github.run_id }}" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Send DingTalk notification
+      if: always()
       env:
         DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+        DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
       run: |
-        # 简单通知
+        # 发送钉钉通知
         python -c "
 import os
-import requests
+import sys
 import json
+import time
+import hmac
+import hashlib
+import base64
+import urllib.parse
+import requests
+from datetime import datetime
 
+# 获取环境变量
 webhook = os.getenv('DINGTALK_WEBHOOK')
-if webhook:
-    message = {
-        'msgtype': 'text',
-        'text': {
-            'content': 'API测试执行完成\n环境: ${{ github.event.inputs.environment || 'test' }}\n查看详情: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
-        }
+secret = os.getenv('DINGTALK_SECRET')
+environment = '${{ matrix.environment }}'
+run_id = '${{ github.run_id }}'
+repository = '${{ github.repository }}'
+actor = '${{ github.actor }}'
+
+if not webhook:
+    print('⚠️ 钉钉Webhook未配置，跳过通知')
+    sys.exit(0)
+
+# 生成签名
+timestamp = str(round(time.time() * 1000))
+if secret:
+    secret_enc = secret.encode('utf-8')
+    string_to_sign = f'{timestamp}\\n{secret}'
+    string_to_sign_enc = string_to_sign.encode('utf-8')
+    hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
+    sign = urllib.parse.quote_plus(base64.b64encode(hmac_code))
+else:
+    sign = ''
+
+# 构建URL
+actions_url = f'https://github.com/{repository}/actions/runs/{run_id}'
+artifact_url = f'{actions_url}/artifacts'
+
+# 根据退出状态判断结果
+exit_code = int('${{ steps.run-tests.outputs.exit_code || 0 }}')
+if exit_code == 0:
+    status = '✅ 成功'
+    status_color = '#00FF00'
+else:
+    status = '❌ 失败'
+    status_color = '#FF0000'
+
+# 构建消息
+current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+message = {
+    'msgtype': 'markdown',
+    'markdown': {
+        'title': 'API自动化测试报告',
+        'text': f'''## 🧪 API自动化测试完成通知
+
+**📅 执行时间**: {current_time}  
+**🏷️ 测试环境**: {environment.upper()}  
+**👤 触发人员**: {actor or '定时任务'}  
+**📊 测试状态**: {status}  
+
+### 🔗 相关链接
+- 📋 [查看执行详情]({actions_url})
+- 📦 [下载测试报告]({artifact_url})
+- 📁 [查看代码仓库](https://github.com/{repository})
+
+### ⚙️ 测试配置
+- 环境参数: \`--env={environment}\`
+- 执行命令: \`pytest --env={environment} --alluredir=./allure-results --clean-alluredir\`
+- Python版本: ${{ env.PYTHON_VERSION }}
+
+### 📝 执行说明
+测试已通过GitHub Actions自动执行完成。  
+如需重新执行特定环境的测试，请在GitHub Actions页面手动触发工作流。
+
+---
+*此消息由GitHub Actions自动发送*'''
+    },
+    'at': {
+        'atMobiles': [],
+        'isAtAll': False
     }
-    requests.post(webhook, json=message)
+}
+
+# 发送请求
+params = f'timestamp={timestamp}'
+if sign:
+    params += f'&sign={sign}'
+
+webhook_url = f'{webhook}?{params}'
+try:
+    response = requests.post(
+        webhook_url,
+        headers={'Content-Type': 'application/json'},
+        data=json.dumps(message),
+        timeout=10
+    )
+    
+    if response.status_code == 200:
+        print('✅ 钉钉通知发送成功')
+    else:
+        print(f'❌ 钉钉通知发送失败: {response.text}')
+except Exception as e:
+    print(f'❌ 发送钉钉通知时出错: {str(e)}')
 "
