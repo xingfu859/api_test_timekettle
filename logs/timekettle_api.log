@@ -1,0 +1,655 @@
+2025-12-02 17:37:52.990 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:52.992 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:52.992 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:52.992 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/auth/check-email
+2025-12-02 17:37:52.992 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:52.992 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"login_id":"test101@qq.com","login_type":5,"source":"Timekettle"}
+2025-12-02 17:37:52.993 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:52.994 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"Connection":"Keep-Alive","Content-Type":"application/json"}
+2025-12-02 17:37:52.994 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:52.994 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:37:52.994 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/auth/check-email
+2025-12-02 17:37:52.994 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Connection': 'Keep-Alive', 'Content-Type': 'application/json'}
+2025-12-02 17:37:52.994 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'login_id': 'test101@qq.com', 'login_type': 5, 'source': 'Timekettle'}
+2025-12-02 17:37:53.389 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:53.390 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:53.390 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:53.390 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/auth/send-code
+2025-12-02 17:37:53.390 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:53.390 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"lang":"zh","login_id":"test101@qq.com","login_type":5,"opt_type":"resetPass","source":"Timekettle"}
+2025-12-02 17:37:53.390 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:53.390 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:53.391 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:53.391 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:37:53.391 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/auth/send-code
+2025-12-02 17:37:53.391 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:37:53.391 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'lang': 'zh', 'login_id': 'test101@qq.com', 'login_type': 5, 'opt_type': 'resetPass', 'source': 'Timekettle'}
+2025-12-02 17:37:53.610 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:53.611 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:53.611 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:53.611 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/auth/login
+2025-12-02 17:37:53.611 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:53.611 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"login_id":"test101@qq.com","password":"zxj123456","login_type":5,"source":"Timekettle"}
+2025-12-02 17:37:53.611 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:53.612 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Content-Type":"application/json"}
+2025-12-02 17:37:53.612 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:53.612 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:37:53.612 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/auth/login
+2025-12-02 17:37:53.612 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Content-Type': 'application/json'}
+2025-12-02 17:37:53.612 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'login_id': 'test101@qq.com', 'password': 'zxj123456', 'login_type': 5, 'source': 'Timekettle'}
+2025-12-02 17:37:53.870 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:53.870 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/mediate/routes?userId=#userId#&deviceType=Android&area=CN
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/mediate/routes?userId=#userId#&deviceType=Android&area=CN
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:53.871 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:53.871 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:53.871 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:53.871 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/mediate/routes?userId=#userId#&deviceType=Android&area=CN
+2025-12-02 17:37:53.871 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:37:53.871 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:54.049 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:54.050 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:54.050 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:54.050 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/pollInfo/get?userId=#userId#
+2025-12-02 17:37:54.050 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:54.050 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/pollInfo/get?userId=#userId#
+2025-12-02 17:37:54.051 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:54.051 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:54.051 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:54.051 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:54.051 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:54.051 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:54.051 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:54.051 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/pollInfo/get?userId=#userId#
+2025-12-02 17:37:54.051 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:54.051 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:54.286 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:54.287 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:54.287 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:54.287 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/app/consents
+2025-12-02 17:37:54.287 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:54.288 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"action_time":"2025-12-02T16:09:42+08:00","consent_action":"granted","consents":[{"consent_type":"User_Agreement","version":"V1.0"},{"consent_type":"Privacy_Policy","version":"V1.0"},{"consent_type":"Data_Process","version":"V1.0"}]}
+2025-12-02 17:37:54.288 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:54.288 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:54.288 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:54.288 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:54.289 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:54.289 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:37:54.289 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/app/consents
+2025-12-02 17:37:54.289 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:37:54.289 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'action_time': '2025-12-02T16:09:42+08:00', 'consent_action': 'granted', 'consents': [{'consent_type': 'User_Agreement', 'version': 'V1.0'}, {'consent_type': 'Privacy_Policy', 'version': 'V1.0'}, {'consent_type': 'Data_Process', 'version': 'V1.0'}]}
+2025-12-02 17:37:54.499 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:54.499 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:54.499 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:54.501 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/config/getConfigs
+2025-12-02 17:37:54.501 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:54.501 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:54.501 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:54.501 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:54.501 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:54.501 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:54.501 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:54.501 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/config/getConfigs
+2025-12-02 17:37:54.501 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:54.501 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:54.768 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:54.768 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/customTerm/listByUserId?userId=#userId#
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/customTerm/listByUserId?userId=#userId#
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:54.769 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:54.769 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:54.769 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:54.769 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/customTerm/listByUserId?userId=#userId#
+2025-12-02 17:37:54.769 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:54.769 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:55.019 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/userDevice/getByUserId?userId=#userId#
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/userDevice/getByUserId?userId=#userId#
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:55.020 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:55.021 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:55.021 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:55.021 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:55.021 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/userDevice/getByUserId?userId=#userId#
+2025-12-02 17:37:55.021 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:55.022 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:55.236 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:55.237 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.237 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.237 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/noviceVillage/getStatus?userId=#userId#&product=004
+2025-12-02 17:37:55.237 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:55.237 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/noviceVillage/getStatus?userId=#userId#&product=004
+2025-12-02 17:37:55.237 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.238 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.238 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:55.238 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:55.238 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:55.238 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:55.238 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:55.238 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/noviceVillage/getStatus?userId=#userId#&product=004
+2025-12-02 17:37:55.238 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:55.238 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:55.492 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:55.492 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.492 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.492 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/userInfo/competency?userId=#userId#
+2025-12-02 17:37:55.492 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:55.492 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/userInfo/competency?userId=#userId#
+2025-12-02 17:37:55.493 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.493 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.493 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:55.493 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:55.493 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:55.493 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:55.493 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:55.493 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/userInfo/competency?userId=#userId#
+2025-12-02 17:37:55.493 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:55.493 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:55.733 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:55.734 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.734 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:55.734 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/notify/dfu
+2025-12-02 17:37:55.734 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:55.734 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"product":"005","appPlatform":"Android","appVersion":"3.4.8","version":"0.0.0"}
+2025-12-02 17:37:55.734 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.735 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:55.735 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:55.735 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:55.735 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:55.735 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:37:55.735 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/notify/dfu
+2025-12-02 17:37:55.735 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:37:55.735 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'product': '005', 'appPlatform': 'Android', 'appVersion': '3.4.8', 'version': '0.0.0'}
+2025-12-02 17:37:55.912 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/userLogin/save
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"appName":"时空壶","appVersion":"3.4.8","bitAbi":"arm64-v8a","deiceSystemVersion":"15","deviceBrand":"vivo","deviceBuildId":"12705670","deviceBundleId":"com.translation666","deviceCarrier":"","deviceId":"PD2241","deviceLocaleCode":"zh_CN","deviceName":"V2241A","deviceOs":"android","deviceSystemName":"Android","deviceTotalDiskCapacity":236829245440,"deviceTotalMemory":7684182016,"deviceUniqueId":"2bd39c4139dc83f41bb3053d805fd0e49","geo":"{\"city\":\"Dallas\",\"country\":\"United States\",\"countryCode\":\"US\",\"lat\":32.7767,\"lon\":-96.797,\"mobile\":false,\"proxy\":false,\"query\":\"154.206.16.253\",\"region\":\"TX\",\"regionName\":\"Texas\",\"status\":\"success\",\"timezone\":\"America/Chicago\",\"zip\":\"75270\"}","model":"V2241A","userId":#userId#}
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"appName":"时空壶","appVersion":"3.4.8","bitAbi":"arm64-v8a","deiceSystemVersion":"15","deviceBrand":"vivo","deviceBuildId":"12705670","deviceBundleId":"com.translation666","deviceCarrier":"","deviceId":"PD2241","deviceLocaleCode":"zh_CN","deviceName":"V2241A","deviceOs":"android","deviceSystemName":"Android","deviceTotalDiskCapacity":236829245440,"deviceTotalMemory":7684182016,"deviceUniqueId":"2bd39c4139dc83f41bb3053d805fd0e49","geo":"{\"city\":\"Dallas\",\"country\":\"United States\",\"countryCode\":\"US\",\"lat\":32.7767,\"lon\":-96.797,\"mobile\":false,\"proxy\":false,\"query\":\"154.206.16.253\",\"region\":\"TX\",\"regionName\":\"Texas\",\"status\":\"success\",\"timezone\":\"America/Chicago\",\"zip\":\"75270\"}","model":"V2241A","userId":#userId#}
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:55.913 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:55.914 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:55.923 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/depositConfig/fish?version=3.4.4&buildCode=12599036&platform=ios
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"1","App-Version":"3.4.4"}
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:55.924 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"1","App-Version":"3.4.4"}
+2025-12-02 17:37:55.924 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:55.924 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:55.924 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/depositConfig/fish?version=3.4.4&buildCode=12599036&platform=ios
+2025-12-02 17:37:55.924 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '1', 'App-Version': '3.4.4'}
+2025-12-02 17:37:55.924 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:56.199 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/notify/versionUpgrade?platform=0&version=v3.4.8&lang=zh-CN
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:56.200 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:56.201 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:56.201 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:56.201 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/notify/versionUpgrade?platform=0&version=v3.4.8&lang=zh-CN
+2025-12-02 17:37:56.201 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:56.201 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:56.386 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:56.387 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.387 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:56.387 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/userDevice/save
+2025-12-02 17:37:56.387 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:56.387 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"userId":#userId#,"type":"W4","describe":"C1:CE:F0:5D:CF:45","code":"012","snCode":"\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000","firmwareVersion":"1.66"}
+2025-12-02 17:37:56.388 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:56.388 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"userId":#userId#,"type":"W4","describe":"C1:CE:F0:5D:CF:45","code":"012","snCode":"\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000","firmwareVersion":"1.66"}
+2025-12-02 17:37:56.388 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:56.388 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:56.388 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:56.388 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:56.399 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/userCoupon/hasCollectableCoupon?userId=#userId#
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/userCoupon/hasCollectableCoupon?userId=#userId#
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:56.400 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:56.400 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:56.400 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:56.400 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/userCoupon/hasCollectableCoupon?userId=#userId#
+2025-12-02 17:37:56.400 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:56.400 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:56.620 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:56.620 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.620 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:56.620 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis//markov/user/mediate/switch?deviceType=app
+2025-12-02 17:37:56.620 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.620 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.621 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:56.621 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:56.621 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis//markov/user/mediate/switch?deviceType=app
+2025-12-02 17:37:56.621 | INFO     | tools.handle_requests:request_api:53 - 请求头是:None
+2025-12-02 17:37:56.621 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:56.835 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:56.835 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:56.835 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:56.835 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/dialog
+2025-12-02 17:37:56.835 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:56.835 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"cloud_recording_enabled":false,"custom_vocabulary_enabled":false,"locale_list":[{"channel":"left","locale":"en-US"},{"channel":"right","locale":"zh-CN"}],"recognize_engine":"","room_no":"","scenario":"translate_speech_to_speech","translate_engine":"o_001","vad_enabled":false,"voice_setting":[{"channel":"left","command":{"gender":"female","is_open":true,"speed":1.25,"volume":100.0}},{"channel":"right","command":{"gender":"female","is_open":true,"speed":1.25,"volume":100.0}}]}
+2025-12-02 17:37:56.835 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:56.835 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:56.836 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:56.836 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:56.836 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:56.836 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:37:56.836 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/dialog
+2025-12-02 17:37:56.836 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Content-Type': 'application/json'}
+2025-12-02 17:37:56.836 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'cloud_recording_enabled': False, 'custom_vocabulary_enabled': False, 'locale_list': [{'channel': 'left', 'locale': 'en-US'}, {'channel': 'right', 'locale': 'zh-CN'}], 'recognize_engine': '', 'room_no': '', 'scenario': 'translate_speech_to_speech', 'translate_engine': 'o_001', 'vad_enabled': False, 'voice_setting': [{'channel': 'left', 'command': {'gender': 'female', 'is_open': True, 'speed': 1.25, 'volume': 100.0}}, {'channel': 'right', 'command': {'gender': 'female', 'is_open': True, 'speed': 1.25, 'volume': 100.0}}]}
+2025-12-02 17:37:57.026 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:57.026 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:57.026 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.026 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/dialog/#room_no#/tts
+2025-12-02 17:37:57.026 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:57.026 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/dialog/#room_no#/tts
+2025-12-02 17:37:57.026 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:57.026 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"text_list":[{"locale":"pt-PT","text":"Por favor, fale Português neste fone de ouvido."},{"locale":"zh-CN","text":"请使用此耳机说中文"}]}
+2025-12-02 17:37:57.027 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.027 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.027 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:57.027 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.027 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:57.027 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:37:57.027 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/dialog/#room_no#/tts
+2025-12-02 17:37:57.027 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Content-Type': 'application/json'}
+2025-12-02 17:37:57.027 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'text_list': [{'locale': 'pt-PT', 'text': 'Por favor, fale Português neste fone de ouvido.'}, {'locale': 'zh-CN', 'text': '请使用此耳机说中文'}]}
+2025-12-02 17:37:57.263 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:57.263 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:57.264 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.264 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts/speed
+2025-12-02 17:37:57.264 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:57.264 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts/speed
+2025-12-02 17:37:57.264 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:57.264 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： [{"channel":"left","speed":1.5},{"channel":"right","speed":1.5}]
+2025-12-02 17:37:57.264 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.265 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.265 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:57.265 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.265 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:57.265 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：put
+2025-12-02 17:37:57.265 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts/speed
+2025-12-02 17:37:57.266 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Content-Type': 'application/json'}
+2025-12-02 17:37:57.266 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：[{'channel': 'left', 'speed': 1.5}, {'channel': 'right', 'speed': 1.5}]
+2025-12-02 17:37:57.443 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/locale
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/locale
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"locale":"es-US","target_locale":["zh-CN"]} 
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:57.444 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.445 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:57.445 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：put
+2025-12-02 17:37:57.445 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/locale
+2025-12-02 17:37:57.445 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Content-Type': 'application/json'}
+2025-12-02 17:37:57.445 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'locale': 'es-US', 'target_locale': ['zh-CN']}
+2025-12-02 17:37:57.661 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：[{"channel":"left","tts_on":true},{"channel":"right","tts_on":true}]
+2025-12-02 17:37:57.662 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.663 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.663 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:57.663 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.663 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:57.663 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：put
+2025-12-02 17:37:57.663 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts
+2025-12-02 17:37:57.663 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Content-Type': 'application/json'}
+2025-12-02 17:37:57.663 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：[{'channel': 'left', 'tts_on': True}, {'channel': 'right', 'tts_on': True}]
+2025-12-02 17:37:57.855 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts/gender
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts/gender
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： [{"channel":"left","gender":"female"},{"channel":"right","gender":"female"}]
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:57.856 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:57.856 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:57.856 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：put
+2025-12-02 17:37:57.857 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#/speaker/tts/gender
+2025-12-02 17:37:57.857 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Content-Type': 'application/json'}
+2025-12-02 17:37:57.857 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：[{'channel': 'left', 'gender': 'female'}, {'channel': 'right', 'gender': 'female'}]
+2025-12-02 17:37:58.052 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:58.052 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:58.052 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.052 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/dialog/#room_no#/custom-vocabulary
+2025-12-02 17:37:58.052 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:58.052 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/dialog/#room_no#/custom-vocabulary
+2025-12-02 17:37:58.052 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:58.053 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"custom_vocabulary_enabled":true}
+2025-12-02 17:37:58.053 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.053 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:58.053 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:58.053 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Content-Type":"application/json"}
+2025-12-02 17:37:58.053 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:58.053 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：put
+2025-12-02 17:37:58.053 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/dialog/#room_no#/custom-vocabulary
+2025-12-02 17:37:58.053 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Content-Type': 'application/json'}
+2025-12-02 17:37:58.053 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'custom_vocabulary_enabled': True}
+2025-12-02 17:37:58.355 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:58.356 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:58.356 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.356 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/v2/dialog/#room_no#/engine 
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/v2/dialog/#room_no#/engine 
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"recognize_engine":"","translate_engine":"o_001"}
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:58.357 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:58.357 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:58.357 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：put
+2025-12-02 17:37:58.357 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/v2/dialog/#room_no#/engine 
+2025-12-02 17:37:58.357 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:37:58.358 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'recognize_engine': '', 'translate_engine': 'o_001'}
+2025-12-02 17:37:58.575 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['room_no']
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#"}
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:58.576 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#"}
+2025-12-02 17:37:58.578 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:58.578 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：DELETE
+2025-12-02 17:37:58.578 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/channel/room/#room_no#
+2025-12-02 17:37:58.578 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#'}
+2025-12-02 17:37:58.578 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:58.819 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:58.820 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:58.820 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.820 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/productWiki/recommend?userId=#userId#&lang=zh-CN
+2025-12-02 17:37:58.820 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:58.820 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/productWiki/recommend?userId=#userId#&lang=zh-CN
+2025-12-02 17:37:58.820 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:58.821 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:58.822 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"1","App-Version":"3.4.8"}
+2025-12-02 17:37:58.822 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:58.822 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"1","App-Version":"3.4.8"}
+2025-12-02 17:37:58.822 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:58.822 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:58.822 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/productWiki/recommend?userId=#userId#&lang=zh-CN
+2025-12-02 17:37:58.822 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '1', 'App-Version': '3.4.8'}
+2025-12-02 17:37:58.822 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:59.060 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/user/activity/listAll?userId=#userId#&lang=zh-CN
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/activity/listAll?userId=#userId#&lang=zh-CN
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"1","App-Version":"3.4.8"}
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.061 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"1","App-Version":"3.4.8"}
+2025-12-02 17:37:59.061 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:59.062 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:59.062 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/activity/listAll?userId=#userId#&lang=zh-CN
+2025-12-02 17:37:59.062 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '1', 'App-Version': '3.4.8'}
+2025-12-02 17:37:59.062 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:59.288 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.289 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.289 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/walletInfo/getByUserId?userId=#userId#
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/walletInfo/getByUserId?userId=#userId#
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.290 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.291 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:59.291 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:59.291 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/walletInfo/getByUserId?userId=#userId#
+2025-12-02 17:37:59.291 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:59.291 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:59.489 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.490 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.491 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:59.491 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/goodsList/listAllGoods
+2025-12-02 17:37:59.491 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.491 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.491 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.491 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.491 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.491 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:59.491 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:59.491 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/goodsList/listAllGoods
+2025-12-02 17:37:59.491 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:59.491 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:59.694 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/orderList/orderByWechat
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"userId":#userId#,"goodsId":#goodsId#,"quantity":1}
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId', 'goodsId']
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"userId":#userId#,"goodsId":#goodsId#,"quantity":1}
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.695 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:59.705 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.706 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.706 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:59.706 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/orderList/receiptByWechat
+2025-12-02 17:37:59.706 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.706 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"userId":#userId#,"goodsId":#goodsId#,"receipt":"#prepayid#","quantity":1,"amountWithCurrency":"CN￥68.0"}
+2025-12-02 17:37:59.706 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId', 'goodsId', 'prepayid']
+2025-12-02 17:37:59.707 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"userId":#userId#,"goodsId":#goodsId#,"receipt":"#prepayid#","quantity":1,"amountWithCurrency":"CN￥68.0"}
+2025-12-02 17:37:59.707 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.707 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:59.707 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.707 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:59.717 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.717 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.718 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:59.718 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/goodsList/listPkgConfig
+2025-12-02 17:37:59.718 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.718 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.718 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.718 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.718 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.718 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:59.718 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:59.718 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/goodsList/listPkgConfig
+2025-12-02 17:37:59.718 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:59.718 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:37:59.938 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/userCoupon/listByCondition
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"userId":#userId#,"couponScene":"OFFLINE_PACKAGE","categoryCode":"012"}
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"userId":#userId#,"couponScene":"OFFLINE_PACKAGE","categoryCode":"012"}
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.939 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:59.940 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.940 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:37:59.950 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:37:59.950 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.950 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.950 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/userCoupon/countCoupon?userId=#userId#&couponType=NORMAL_OFFLINE_PACKAGE_COUPON&productCode=012
+2025-12-02 17:37:59.950 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:37:59.950 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/userCoupon/countCoupon?userId=#userId#&couponType=NORMAL_OFFLINE_PACKAGE_COUPON&productCode=012
+2025-12-02 17:37:59.950 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:37:59.952 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:37:59.952 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.952 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:37:59.952 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:37:59.952 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:37:59.952 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:37:59.952 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/userCoupon/countCoupon?userId=#userId#&couponType=NORMAL_OFFLINE_PACKAGE_COUPON&productCode=012
+2025-12-02 17:37:59.952 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:37:59.952 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:38:00.145 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:00.145 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.145 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.145 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/goodsList/listPkgGoods?userId=#userId#&pkgCategoryCode=012
+2025-12-02 17:38:00.145 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:38:00.146 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/goodsList/listPkgGoods?userId=#userId#&pkgCategoryCode=012
+2025-12-02 17:38:00.146 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.146 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.146 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:38:00.146 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:00.146 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:38:00.146 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:38:00.146 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:38:00.146 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/goodsList/listPkgGoods?userId=#userId#&pkgCategoryCode=012
+2025-12-02 17:38:00.146 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:38:00.146 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:38:00.343 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/orderList/pageOrder
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"id":"","orderNo":"","userId":"#userId#","pageSize":30,"pageNum":1}
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"id":"","orderNo":"","userId":"#userId#","pageSize":30,"pageNum":1}
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:00.344 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.344 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:38:00.345 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:38:00.345 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/orderList/pageOrder
+2025-12-02 17:38:00.345 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:38:00.345 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'id': '', 'orderNo': '', 'userId': '#userId#', 'pageSize': 30, 'pageNum': 1}
+2025-12-02 17:38:00.530 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:00.530 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.530 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:38:00.530 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/durationOrderList/pageByCondition
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"userId":#userId#,"pageNum":1,"pageSize":300}
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"userId":#userId#,"pageNum":1,"pageSize":300}
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:00.531 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.541 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/orderList/listByUserId
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"userId":"#userId#","pageSize":300,"pageNum":1}
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"userId":"#userId#","pageSize":300,"pageNum":1}
+2025-12-02 17:38:00.541 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.542 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.542 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:00.542 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.542 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:38:00.542 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:38:00.542 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/orderList/listByUserId
+2025-12-02 17:38:00.542 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:38:00.542 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'userId': '#userId#', 'pageSize': 300, 'pageNum': 1}
+2025-12-02 17:38:00.717 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:00.718 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/pkg/userCoupon/listAndOrderByCondition
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：{"userId":#userId#,"useFlag":false}
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"userId":#userId#,"useFlag":false}
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:00.719 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:00.729 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/userCoupon/countCoupon?userId=#userId#&couponType=NORMAL_OFFLINE_PACKAGE_COUPON&productCode=002
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['userId']
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/deposit/userCoupon/countCoupon?userId=#userId#&couponType=NORMAL_OFFLINE_PACKAGE_COUPON&productCode=002
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:00.730 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:38:00.730 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:38:00.730 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:38:00.730 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/deposit/userCoupon/countCoupon?userId=#userId#&couponType=NORMAL_OFFLINE_PACKAGE_COUPON&productCode=002
+2025-12-02 17:38:00.730 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:38:00.731 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:38:00.938 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:00.938 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.938 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:38:00.938 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/markov/user/config/getVersion?platform=android
+2025-12-02 17:38:00.938 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:00.938 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:00.938 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:38:00.939 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:00.939 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8"}
+2025-12-02 17:38:00.939 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:38:00.939 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：get
+2025-12-02 17:38:00.939 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/markov/user/config/getVersion?platform=android
+2025-12-02 17:38:00.939 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8'}
+2025-12-02 17:38:00.939 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：None
+2025-12-02 17:38:01.131 | INFO     | conftest:get_env:45 - --env的参数的值是dev
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:25 - 数据为空，不需要替换！
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：https://test-api-jp.timekettle.co/apis/app/storage/upload
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:48 - 要替换的占位符为空：[],不需要做替换操作！
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是：{"file_name":"9251652053384601601764645704249_android.zip","category":0}
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:29 - ===================开始替换数据=========================
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:30 - 原始字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:31 - 需要替换的占位符有：['Authorization']
+2025-12-02 17:38:01.131 | INFO     | tools.handle_replace:replace_mark_fun:49 - 替换完成之后的字符串是： {"Authorization":"Bearer #Authorization#","Platform-Type":"0","App-Version":"3.4.8","Content-Type":"application/json"}
+2025-12-02 17:38:01.131 | INFO     | tools.handle_requests:request_api:50 - =====================请求消息=======================
+2025-12-02 17:38:01.131 | INFO     | tools.handle_requests:request_api:51 - 请求方法是：post
+2025-12-02 17:38:01.133 | INFO     | tools.handle_requests:request_api:52 - 请求地址是：https://test-api-jp.timekettle.co/apis/app/storage/upload
+2025-12-02 17:38:01.133 | INFO     | tools.handle_requests:request_api:53 - 请求头是:{'Authorization': 'Bearer #Authorization#', 'Platform-Type': '0', 'App-Version': '3.4.8', 'Content-Type': 'application/json'}
+2025-12-02 17:38:01.133 | INFO     | tools.handle_requests:request_api:54 - 请求参数是：{'file_name': '9251652053384601601764645704249_android.zip', 'category': 0}

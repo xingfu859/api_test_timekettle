@@ -50,7 +50,7 @@ def request_api(case,get_env,token=None): # get_env的值 pre test dev
     logger.info("=====================请求消息=======================")
     logger.info(f"请求方法是：{method}")
     logger.info(f"请求地址是：{url}")
-    logger.info(f"请求头是：：{header}")
+    logger.info(f"请求头是:{header}")
     logger.info(f"请求参数是：{param}")
 
     req = None  # 返回结果的变量初始化
@@ -72,9 +72,17 @@ def request_api(case,get_env,token=None): # get_env的值 pre test dev
             req = requests.request(method, url, headers=header, files=file_param)
     if method.lower() == "put":
         req = requests.request(method, url, headers=header, json=param)
+    if method.lower() == "delete":
+        # DELETE方法通常用于删除资源，参数可以放在URL中或请求体中
+        # 根据API设计，可以选择params或json/data传递参数
+        if "Content-Type" in header and header["Content-Type"] == "application/json":
+            req = requests.request(method, url, headers=header, json=param)
+        else:
+            # 默认将参数放在URL查询字符串中
+            req = requests.request(method, url, headers=header, params=param)
     # 日志记录相应结果：
     logger.info("===============响应消息=====================")
-    logger.info(f"响应状态码：{req.status_code}")
+    #logger.info(f"响应状态码：{req.status_code}")
     logger.info(f"响应消息体：{req.text}")
     # 在得到了接口的响应解雇哦之后再提取响应字段 -在这里调用提取的函数  设置提取的值到环境变量里去
     extrac_response(req,case["提取响应字段"])

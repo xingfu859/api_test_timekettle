@@ -18,16 +18,16 @@ from jsonpath import jsonpath
 from loguru import logger
 
 
-@pytest.fixture()
-def login_fixture():
-    param = {"principal": "lemon_py", "credentials": "12345678", "appType": 3, "loginType": 0}
-    url = 'http://mall.lemonban.com:8107/login'
-    res = requests.request("post", url, json=param)
-    # 提取token
-    access_token = jsonpath(res.json(), '$..access_token')[0]
-    token_type = jsonpath(res.json(), '$..token_type')[0]
-    token =  token_type + access_token
-    yield token #返回值
+# @pytest.fixture()
+# def login_fixture():
+#     param = {"principal": "lemon_py", "credentials": "12345678", "appType": 3, "loginType": 0}
+#     url = 'http://mall.lemonban.com:8107/login'
+#     res = requests.request("post", url, json=param)
+#     # 提取token
+#     access_token = jsonpath(res.json(), '$..access_token')[0]
+#     token_type = jsonpath(res.json(), '$..token_type')[0]
+#     token =  token_type + access_token
+#     yield token #返回值
 
 # 定义一个钩子函数: 如果要定义多个自定义的参数 那么在同一个钩子函数里 定义多条参数
 def pytest_addoption(parser):
@@ -45,3 +45,5 @@ def get_env(request):
     logger.info(f"--env的参数的值是{env_value}")
     # 设置返回值 把拿到的数据返回
     yield env_value
+
+#test

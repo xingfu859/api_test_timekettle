@@ -36,7 +36,10 @@ def extrac_response(response,extract_expre):
     logger.info(f"提取响应结果的表达式是：{extract_expre}")
     for k,v in extract_expre.items():  # k 是变量名  v是jsonpath提取表达式
         value = None  # value初始化
-        if v.startswith("$"):
+        if v.endswith("_header"):
+            v=v.strip("_header")
+            value = jsonpath(dict(response.headers),v)[0]
+        elif v.startswith("$"):
             value = jsonpath(response.json(),v)[0]
         elif v == "text":
             value = response.text  # 直接获取响应消息的文本

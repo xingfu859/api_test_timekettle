@@ -51,7 +51,9 @@ class HandleMysql:
             self.conn.close()
 
 if __name__ == '__main__':
-    from data.setting import my_db
-    sql = """select mobile_code,user_phone from tz_sms_log where user_phone = "15312121212" ORDER BY rec_date limit 1;"""
-    result = HandleMysql(**my_db).query_sql(sql)
-    print(result)  # 如果没有查询结果默认返回的 返回是None
+     from data.setting import my_db
+     sql="SELECT id FROM `markov_user`.`markov_user_info` WHERE email='1375709462@qq.com'"
+    # sql = """select mobile_code,user_phone from tz_sms_log where user_phone = "15312121212" ORDER BY rec_date limit 1;"""
+    # result = HandleMysql(**my_db).query_sql(sql)
+    # print(result)  # 如果没有查询结果默认返回的 返回是None
+     HandleMysql(**my_db).query_sql(sql)

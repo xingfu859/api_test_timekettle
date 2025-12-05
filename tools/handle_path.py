@@ -6,13 +6,10 @@
 from pathlib import Path
 
 # 日志文件的路径处理
-log_path = Path(__file__).absolute().parent.parent/"logs"/"lmall_api.log"
+log_path = Path(__file__).absolute().parent.parent/"logs"/"timekettle_api.log"
 
-# excel文件的路径处理
-excel_path = Path(__file__).absolute().parent.parent/"data"/"testcase73_1.xlsx"
-
-# mall测试用例的excel文件
-case_path = Path(__file__).absolute().parent.parent/"data"/"testcase_mall.xlsx"
+# 测试用例的excel文件
+case_path = Path(__file__).absolute().parent.parent/"data"/"timekettle_api_testcase.xlsx"
 
 # 上传图片路径
 pic_path = Path(__file__).absolute().parent.parent/"data"

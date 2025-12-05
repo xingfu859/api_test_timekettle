@@ -37,7 +37,7 @@ def database_assert_fun(assert_expre):
             logger.info(f"数据库的查询的实际结果是：{i}")
             logger.info(f"数据库的查询的预期结果是：{v}")
             try:
-                assert i == v
+                assert str(i) == v
                 logger.info("数据库断言成功！")
             except AssertionError as e:
                 logger.error("数据库断言失败！")
